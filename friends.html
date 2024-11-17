@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends - Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="screen">
+    <h2>Manage Friends & Groups</h2>
+    <input type="text" id="newFriend" placeholder="Add Friend" />
+    <button onclick="addFriend()">Add Friend</button>
+    <ul id="friendsList"></ul>
+
+    <input type="text" id="newGroup" placeholder="Create Group" />
+    <button onclick="createGroup()">Create Group</button>
+    <ul id="groupsList"></ul>
+
+    <button onclick="window.location.href='chat.html'">Back to Chat</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

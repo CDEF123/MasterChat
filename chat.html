@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat - Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chatScreen" class="screen">
+    <div id="sidebar">
+      <input type="text" id="search" placeholder="Search friends or groups" oninput="searchContacts()" />
+      <ul id="contactsList"></ul>
+      <button onclick="window.location.href='friends.html'">Manage Friends</button>
+    </div>
+
+    <div id="chatContainer">
+      <h2 id="chatWith">Select a Contact</h2>
+      <div id="chatWindow"></div>
+      <div id="messageInput">
+        <input type="text" id="message" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
